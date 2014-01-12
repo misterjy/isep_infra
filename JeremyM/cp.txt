@@ -1,0 +1,16 @@
+Commande cp : 
+Permet de copier un fichier ou un repertoire
+
+Syntaxe :  cp [option] nom-fichier(s)-origine nom-fichier-ou-répertoire-destination
+
+Options
+-i
+avertit de l'existence d'un fichier du même nom et demande s'il peut ou non remplacer son contenu. Recopions à nouveau le fichier « linux-test » sur « linux-test2 », cette fois avec l'option -i: cp -i linux-test linux-test2. Le message cp: overwrite `linux-test2'? (ou, en version française, cp: écraser `linux-test2'?) apparaît. Répondre par "y" (yes) ou "n". En version française "o" (oui) fonctionne.
+-b
+comme l'option -i s'assure que la copie n'écrase pas un fichier existant. Le fichier écrasé est toutefois alors sauvegardé, renommé avec un suffixe tilde (~).
+-v
+affiche les noms des fichiers copiés (pensez à verbeux). Utile si vous souhaitez vérifier le bon déroulement.
+-p
+lors de la copie les attributs des fichiers seront préservés (propriétaire, groupe, date de création... lire chown).
+[modifier] -r
+L'option -r copie de manière récursive, donc l'ensemble d'un répertoire et de ses sous-répertoires.
